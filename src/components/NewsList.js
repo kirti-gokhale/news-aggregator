@@ -29,7 +29,7 @@ const NewsList = () => {
     useEffect(() => {
         const getArticles = async () => {
 
-            const response =axios.get('https://newsapi.org/v2/everything?q='+query+'&apiKey=dc0f3bdbe3ac408e83d37ced00052399')
+            const response =axios.get('https://newsapi.org/v2/everything?q='+query+'&apiKey="Api_secret_key"')
             console.log(response);
             setArticles((await response).data.articles)
 
